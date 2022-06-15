@@ -37,7 +37,7 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/emulator
 ```bash
 wget https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb && brew install sshpass.rb
 ```
-`brew install --cask goldendict` 翻译软件, 详细配置见 `https://github.com/easeflyer/gd_plugin/blob/master/youdao/README.md`
+`brew install --cask goldendict` 翻译软件, 详细配置见 `<https://github.com/easeflyer/gd_plugin/blob/master/youdao/README.md>`
 
 通过命令行连接vpn
 ```bash
