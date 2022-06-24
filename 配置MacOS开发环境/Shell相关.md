@@ -59,7 +59,7 @@ vi .bash_profile
 alias forti='sudo openforticli -c /usr/local/etc/openforticli/config'
 alias gios='ga da 893A0AFC-1BD8-4B84-8EC9-5B95FE7CFFD5'
 alias gand='ga da emulator-5554'
-alias emu='emulator -avd Pixel_2_API_30 &'
+alias emu='emulator -avd Pixel_2_API_29 &'
 alias iemu='open -a Simulator'
 alias ll='ls -l'
 
@@ -67,8 +67,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
 [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_333.jdk/Contents/HOME"
 export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
-export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/emulator
 ```
 
 
