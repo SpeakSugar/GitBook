@@ -8,4 +8,5 @@
     * [Npm相关](配置MacOS开发环境/Npm相关.md)
 * 项目启动相关配置
     * [mThorAuto](项目启动相关配置/mThorAuto.md)
+    * [appium-hermes](项目启动相关配置/appium-hermes.md)
 

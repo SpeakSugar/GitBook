@@ -1,39 +1,20 @@
-#### 配置shell
-
-`vi .bash_profile` insert env variable
-
-`vi .zshrc` insert `source ~/.bash_profile` then `source .zshrc`
-
-```bash
-vi .bash_profile
-alias forti='sudo openforticli -c /usr/local/etc/openforticli/config'
-alias gios='ga da 893A0AFC-1BD8-4B84-8EC9-5B95FE7CFFD5'
-alias gand='ga da emulator-5554'
-alias emu='emulator -avd Pixel_2_API_30 &'
-alias iemu='open -a Simulator'
-alias ll='ls -l'
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
-[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
-
-export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
-export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/emulator
-```
-
 #### 下载Brew
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://cdn.jsdelivr.net/gh/ineo6/homebrew-install/install)"
 ```
 
 #### 常用的Brew工具下载
-`brew install nvm` > `nvm install 18.2.0` && `nvm install 12.18.3`  
+`brew install nvm` > `nvm install 18.2.0` && `nvm install 12.18.3` 
+
+`nvm alias default v18.2.0`
 
 `brew install libimobiledevice`  
 
 `brew install tesseract`  
 
 `brew install usbmuxd`  iproxy命令
+
+`brew tap wix/brew && brew install applesimutils`
 ```bash
 wget https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb && brew install sshpass.rb
 ```
@@ -42,7 +23,7 @@ wget https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formul
 通过命令行连接vpn
 ```bash
 curl -O https://yanminhui.github.io/assets/formula/openforticli.rb  
-brew install -s --formula openfortivpn-tunnel.rb
+brew install -s --formula openforticli.rb
 vi /usr/local/etc/openforticli/config
 ### configuration file for openforticli, see man openforticli(1) ###
 
@@ -65,6 +46,29 @@ sudo vi /etc/sudoers
 root		ALL = (ALL) ALL
 jeffries.yu     ALL = (ALL) NOPASSWD: ALL
 %admin		ALL = (ALL) NOPASSWD: ALL
+```
+
+#### 配置shell
+
+`vi .bash_profile` insert env variable
+
+`vi .zshrc` insert `source ~/.bash_profile` then `source .zshrc`
+
+```bash
+vi .bash_profile
+alias forti='sudo openforticli -c /usr/local/etc/openforticli/config'
+alias gios='ga da 893A0AFC-1BD8-4B84-8EC9-5B95FE7CFFD5'
+alias gand='ga da emulator-5554'
+alias emu='emulator -avd Pixel_2_API_30 &'
+alias iemu='open -a Simulator'
+alias ll='ls -l'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
+[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+
+export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/emulator
 ```
 
 

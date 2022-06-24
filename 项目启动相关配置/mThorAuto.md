@@ -148,3 +148,8 @@ iOS-remote.run.xml
 </component>
 ```
 
+#### LocalDebugTool
+```bash
+chmod 777 scripts/load-local-debug-tool-customized-TestStep.sh
+./scripts/load-local-debug-tool-customized-TestStep.sh
+```
