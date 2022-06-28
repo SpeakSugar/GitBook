@@ -59,7 +59,7 @@ vi .bash_profile
 alias forti='sudo openforticli -c /usr/local/etc/openforticli/config'
 alias gios='ga da 893A0AFC-1BD8-4B84-8EC9-5B95FE7CFFD5'
 alias gand='ga da emulator-5554'
-alias emu='emulator -avd Pixel_2_API_29 &'
+alias emu='$ANDROID_SDK_ROOT/emulator/emulator @Pixel_2_API_29 &'
 alias iemu='open -a Simulator'
 alias ll='ls -l'
 
